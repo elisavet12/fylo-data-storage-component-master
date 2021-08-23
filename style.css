@@ -12,4 +12,52 @@ body {
   font-size: 14px;
   min-height: 100vh;
   box-sizing: border-box;
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-color: var(--Very-Dark-Blue);
+  margin: 0px;
+}
+
+main {
+  padding: 288px 0px 310px 0px;
+}
+
+.container {
+  place-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+}
+
+.section-one {
+  border: solid;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  background-color: var(--Dark-Blue);
+  justify-content: start;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 66px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 38px 40px;
+}
+
+.logo {
+  width: auto;
+  max-width: 100%;
+}
+
+.properties-icon {
+  border: solid;
+  padding: 12px 14px;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 10px;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
 }
