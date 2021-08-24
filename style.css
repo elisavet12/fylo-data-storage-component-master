@@ -22,19 +22,24 @@ body {
 
 main {
   padding: 288px 0px 310px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   place-content: center;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-self: center;
   align-self: center;
+  gap: 30px;
+  align-items: end;
+  padding: 0px 260px;
 }
 
 .section-one {
-  border: solid;
   display: grid;
   grid-template-rows: 1fr;
   align-items: center;
@@ -44,20 +49,95 @@ main {
   border-top-right-radius: 66px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  padding: 38px 40px;
+  padding: 38px 132px 38px 40px;
+}
+
+.elements {
+  display: inline-block;
+  text-align: left;
 }
 
 .logo {
   width: auto;
   max-width: 100%;
+  margin-bottom: 30px;
 }
 
 .properties-icon {
   border: solid;
+  border-style: none;
   padding: 12px 14px;
   background-color: var(--Very-Dark-Blue);
   border-radius: 10px;
   max-width: 100%;
   width: 24px;
   height: 24px;
+}
+
+.section-two {
+  background-color: var(--Dark-Blue);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 12px;
+  color: var(--Pale-Blue);
+  padding: 40px 40px;
+  max-width: 540px;
+  width: 100%;
+}
+
+.usage {
+  text-align: left;
+}
+
+.counter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 700;
+}
+
+.section-three {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  right: 142px;
+  bottom: 80px;
+  padding: 22px 25px;
+  border-radius: 8px;
+}
+
+.gb {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.condition {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  text-transform: uppercase;
+  margin: 0px;
+}
+.usage-meter {
+  padding: 15px 0px;
+}
+
+.empty {
+  border: solid;
+}
+
+.meter {
+  padding: 3px 0px;
+  color: var(--pink);
+  background-color: var(--Very-Dark-Blue);
+}
+
+.count-min {
+  justify-self: left;
+}
+
+.count-max {
+  justify-self: right;
 }
