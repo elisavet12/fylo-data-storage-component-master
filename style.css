@@ -17,7 +17,8 @@ body {
   background-attachment: fixed;
   background-position: bottom;
   background-color: var(--Very-Dark-Blue);
-  margin: 0px;
+  margin: 0px auto;
+  max-width: 1440px;
 }
 
 main {
@@ -63,6 +64,11 @@ main {
   margin-bottom: 30px;
 }
 
+.elements-properties {
+  display: flex;
+  gap: 15px;
+}
+
 .properties-icon {
   border: solid;
   border-style: none;
@@ -81,8 +87,8 @@ main {
   border-radius: 12px;
   color: var(--Pale-Blue);
   padding: 40px 40px;
-  max-width: 540px;
-  width: 100%;
+  width: 543px;
+  height: 154px;
 }
 
 .usage {
@@ -101,10 +107,11 @@ main {
   align-items: center;
   gap: 20px;
   position: relative;
-  right: 142px;
-  bottom: 80px;
+  left: 50%;
+  bottom: 254%;
   padding: 22px 25px;
   border-radius: 8px;
+  width: fit-content;
 }
 
 .gb {
