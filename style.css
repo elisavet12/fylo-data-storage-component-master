@@ -19,13 +19,14 @@ body {
   background-color: var(--Very-Dark-Blue);
   margin: 0px auto;
   max-width: 1440px;
+  overflow: hidden;
 }
 
 main {
   padding: 288px 0px 310px 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .container {
@@ -147,4 +148,14 @@ main {
 
 .count-max {
   justify-self: right;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    /* grid-template-rows: 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
+  }
+
 }
