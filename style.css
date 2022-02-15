@@ -10,7 +10,7 @@
 body {
   font-family: "Raleway";
   font-size: 14px;
-  min-height: 100vh;
+  height: 100vh;
   box-sizing: border-box;
   background-image: url(./images/bg-desktop.png);
   background-repeat: no-repeat;
@@ -18,22 +18,26 @@ body {
   background-position: bottom;
   background-color: var(--Very-Dark-Blue);
   margin: 0px auto;
+  margin-top: 20vh;
   max-width: 1440px;
   overflow: hidden;
+  
 }
 
 main {
-  padding: 288px 0px 310px 0px;
+  /* padding: 288px 0px 310px 0px; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  
 }
 
 .container {
   place-content: center;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: 1fr 1fr;
   justify-self: center;
   align-self: center;
   gap: 30px;
@@ -119,28 +123,64 @@ main {
   font-size: 40px;
   font-weight: 700;
   margin: 0px;
+  color: var(--Very-Dark-Blue);
 }
 
 .condition {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--Grayish-Blue);
   text-transform: uppercase;
   margin: 0px;
 }
 .usage-meter {
-  padding: 15px 0px;
+  /* padding: 15px 0px; */
+  margin: 15px 0px;
+}
+
+.test {
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 8px;
 }
 
 .empty {
-  border: solid;
+  
+  /* border: solid white;
+    width: 2px;
+    background-color: white;
+    border-radius: 50%; */
+    /* border: 3px solid white; */
+    /* width: 8px; */
+    /* background-color: white; */
+    /* border-radius: 49%; */
+    /* display: flex; */
+    position: relative;
+    /* justify-content: center;
+    display: inline; */
+    /* width: 77px; */
+    /* position: relative;
+    left: 110px; */
+    /* width: 50%; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    left: 213px;
+    border: solid white;
 }
 
 .meter {
-  padding: 3px 0px;
-  color: var(--pink);
-  background-color: var(--Very-Dark-Blue);
+    /* padding: 3px 0px; */
+    /* color: var(--pink); */
+    background-color: var(--pink);
+    width: 228px;
+    border-radius: 8px;
+    border: solid var(--Very-Dark-Blue);
 }
+    
+
+
+
 
 .count-min {
   justify-self: left;
@@ -155,7 +195,15 @@ main {
   .container {
     /* grid-template-rows: 1fr 1fr; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+
+  .section-three {
+    bottom: -10%;
+  }
+
+  body {
+    overflow: scroll;
   }
 
 }
